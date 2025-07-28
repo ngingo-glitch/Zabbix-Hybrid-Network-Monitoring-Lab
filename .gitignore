@@ -1,0 +1,46 @@
+# Security - Never commit these!
+*.psk
+*secrets*
+*keys*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Configuration files with sensitive data
+/configs/**/ipsec.secrets
+/configs/**/*password*
+/configs/**/*secret*
+
+# Log files
+*.log
+/var/log/
+logs/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# System files
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
