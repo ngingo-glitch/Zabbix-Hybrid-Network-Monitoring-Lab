@@ -1,0 +1,27 @@
+# Zabbix Agent Configuration Template
+# Replace placeholders with your actual values
+
+# Server IP addresses (comma-separated)
+Server=<ZABBIX_SERVER_IP>,127.0.0.1
+
+# Active checks configuration  
+ServerActive=<ZABBIX_SERVER_IP>
+
+# Network binding
+ListenIP=0.0.0.0
+ListenPort=10050
+
+# Hostname for identification
+Hostname=<HOSTNAME>
+
+# Logging
+LogFile=/var/log/zabbix/zabbix_agentd.log
+PidFile=/var/run/zabbix/zabbix_agentd.pid
+LogFileSize=10
+
+# Security
+AllowRoot=0
+User=zabbix
+
+# Timeout settings
+Timeout=3
